@@ -1,0 +1,59 @@
+#start{
+    background-image: url("https://media.wired.com/photos/5c9040ee4950d24718d6da99/1:1/w_1800,h_1800,c_limit/shoppingcart-1066110386.jpg");
+    height:90vh;
+    width:100%;
+    background-size:cover;
+    background-position : top 25% right 0;
+    padding:0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    margin-bottom: 10px;
+  }
+  
+  #start h3{
+  /*   padding-bottom:15px; */
+     color:#E3E6F3;
+  }
+  #start h5{
+    color:#E3E6F3;
+  }
+  #start h1{
+     color:#E3E6F3;
+  }
+  
+  #start button{
+    /* cursor: pointer;
+    border-radius: 5px;
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+    display: inline-block; */
+
+    font-family: termina-medium;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    transition: background-color 250ms, color 250ms, border-color 250ms;
+    border: 2px solid #000;
+    border-radius: 2px;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 17px;
+    width: 90%;
+    max-width: 260px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.06;
+    color: #000;
+    font-size: 14px;
+    box-sizing: border-box;
+    
+  }
+
+  #start button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
