@@ -1,35 +1,30 @@
-import React, { useState } from "react";
-import Header from "./Navbar/Header";
-import Carousel from "./Carosel/Carousel";
-import Cards from "./Cards/Cards";
-import Footer from "./Footer/Footer";
-import Stats from "./Stats/Stats";
-import NavNext from "./NavNext/NavNext";
-import Poster from "./Poster/Poster";
+import React, { useState } from 'react';
+import Header from './Navbar/Header';
+import Carousel from './Carosel/Carousel';
+import Cards from './Cards/Cards';
+import Footer from './Footer/Footer';
+import Stats from './Stats/Stats';
+import NavNext from './NavNext/NavNext';
+import Poster from './Poster/Poster';
 
-function App(){
+function App() {
+  return (
+    <div>
+      <Header />
+      <NavNext />
 
-   
+      <Carousel />
+      <Cards category="men's clothing" />
+      <Cards category='electronics' />
+      <Cards category='jewelery' />
 
-    return (
-        <div>
-        <Header />
-        <NavNext />
+      <Poster />
 
-        <Carousel />
-        <Cards />
-        <Cards />
-        <Cards />
+      <Stats />
 
-
-        <Poster />
-
-
-        <Stats />
-
-        <Footer />
-        </div>
-        );
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
