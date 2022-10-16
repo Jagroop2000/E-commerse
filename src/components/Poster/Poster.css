@@ -94,3 +94,7 @@
   #banner3 .banner-box3{
     background-image : url("https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30499.jpg?w=2000");
   }
+
+  .banner-box {
+    border-radius: 15px;
+  }
