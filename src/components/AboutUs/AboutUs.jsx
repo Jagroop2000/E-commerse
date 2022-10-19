@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Navbar/Header";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -9,7 +8,6 @@ const AboutUs = () => {
 
     return (
         <>
-            <Header />
             <section className="bacground-style-about-us">
                 <div className="row">
 

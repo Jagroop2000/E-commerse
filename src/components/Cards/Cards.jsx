@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Cards.css';
 
 function Cards({ category }) {
+  const navigate = useNavigate()
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/category/${category}?limit=4`)
@@ -18,7 +20,7 @@ function Cards({ category }) {
         <p>{category}</p>
         <div className='pro-container'>
           {products.map((product) => (
-            <div className='pro'>
+            <div className='pro' onClick={()=>navigate(`/product/${product.id}`)}>
               <img src={product.image} height='100' alt={product.title}></img>
               <div className='des'>
                 <span>{product.title}</span>

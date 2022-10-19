@@ -10,7 +10,6 @@ import Poster from '../Poster/Poster';
 function Dashboard() {
   return (
     <div>
-      <Header />
       <NavNext />
 
       <Carousel />
