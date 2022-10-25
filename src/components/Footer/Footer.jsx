@@ -3,8 +3,15 @@ import "./Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+ const navigate = useNavigate()
+
+  const navigateToNext =(screen)=>{
+    navigate(screen)
+  }
   return (
    
     <footer className="section-p1">
@@ -32,7 +39,7 @@ const Footer = () => {
       <a href="#">About Us</a>
       <a href="#">Delivery Information</a>
       <a href="#">Privarcy Policy</a>
-      <a href="#">Terms &amp; Condition </a>
+      <a onClick={() => navigateToNext('/terms-and-conditions')} style={{cursor: "pointer"}}>Terms &amp; Condition </a>
       <a href="#">Contact Us</a>
     </div>
     <div className="col">
